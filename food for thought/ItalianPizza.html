@@ -1,0 +1,241 @@
+
+<html>
+<head>
+<link href="main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script>
+$(".input").focus(function() {
+  $(".close-btn").addClass("active");
+});
+
+$(".input").focusout(function() {
+  $(".close-btn").removeClass("active");
+  $(this).val("");
+});
+
+function myFunction() {
+    var x = document.getElementById("mainMenu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		
+    } else {
+        x.style.display = "none";
+		
+    }
+}
+</script>
+</head>
+<body>
+<div id="phoneScreen">
+<div id="topBar"></div>
+<div id="search">
+	<div class="searchBar icon" onclick="myFunction()"><i class="fa fa-bars menu" style="font-size:24px"></i></div>
+    <input type="text" class="input searchBar" placeholder="Search...">
+    <div class="close-btn">&times;</div>
+	<div class="searchBar icon" onclick="window.location.href='index.html'"><i class="fa fa-home menu" style="font-size:27px"></i></div>
+  </div>
+  <div id = "mainMenu">
+  <div id="menuHeading">Main Menu</div>
+  <div class="vertical-menu">
+  <a href="index.html">Home</a>
+  <a href="My Account.html">My Account</a>
+  <a href="#">My Family</a>
+  <a href="submit recipe.html">Submit Recipe</a>
+</div>
+<div class="vertical-settings">
+
+</div>
+
+</div>
+<div class="foodScreen">
+<img src="header.png">
+<div class="tabs">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Origin</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Comments</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Variations</button>
+</div>
+
+<div id="London" class="tabcontent">
+<button class="collapsible" id="pls">Story</button>
+<div id="Story" class="innertabcontent">
+Foods similar to pizza have been made since the neolithic age. Records of people adding other ingredients to bread to make it more flavorful can be found throughout ancient history. The ancient Greeks supplemented their bread with oils, herbs, and cheese, and in the 6th century BC, the Persian soldiers of Achaemenid Empire during the rule King Darius I baked flatbreads with cheese and dates on top of their battle shields. An early reference to a pizza-like food occurs in the Aeneid, when Celaeno, queen of the Harpies, foretells that the Trojans would not find peace until they are forced by hunger to eat their tables (Book III). In Book VII, Aeneas and his men are served a meal that includes round cakes (like pita bread) topped with cooked vegetables. When they eat the bread, they realize that these are the "tables" prophesied by Celaeno.
+</br></br>
+Modern pizza evolved from similar flatbread dishes in Naples in the 18th or early 19th century. Prior to that time, flatbread was often topped with ingredients such as garlic, salt, lard, cheese, and basil. It is uncertain when tomatoes were first added and there are many conflicting claims. Until about 1830, pizza was sold from open-air stands and out of pizza bakeries, and pizzerias keep this old tradition alive today.
+</div>
+<button class="collapsible">Recipe</button>
+<div id="Recipe" class="innertabcontent">
+What you need to make an Italian pizza</br>
+(makes dough for 4 pizzas, each one about 12 inches in diameter):</br></br>
+
+600 mL of warm water</br>
+7 cups (1kg) flour, type “00”*</br>
+2.5 – 3 tablespoons (25 grams) of fresh yeast or 2 teaspoons (7-8 grams) of dried yeast.</br>
+6 tablespoons of extra virgin olive oil</br>
+1.5 teaspoons salt</br>
+2 teaspoons sugar</br>
+*A note on the flour: In Italy, “00”, or “doppio zero,” flour is the most highly-refined and finest-ground flour available. Not available where you are (or too expensive?). An all-purpose flour should work just as well!
+</br></br>
+How to make your pizza:</br>
+Kids can make their own pizzas, too!Kids love making pizza, too!</br>
+1. Sprinkle the yeast into a medium bowl with the warm water. We don’t mean hot, and we don’t mean cold… we mean warm! That’s the kind the yeast likes best. Stir until the yeast dissolves.
+</br></br>
+2. Place almost all of the flour on the table in the shape of a volcano. (Think Mt. Vesuvius… appropriate since Naples is the king of all pizza cities!).
+</br></br>
+3. Pour the yeast-and-warm-water mix, along with the other ingredients, into the “crater” of the volcano.
+</br></br>
+4. Knead everything together for 10 to 15 minutes until the dough is smooth and elastic, keeping your surface floured.
+</br></br>
+5. Grease up a bowl with some olive oil and put the dough inside. Turn the dough around so the top is slightly oiled.
+</br></br>
+6. Cover the bowl and put the dough aside to let it rest for at least four or five hours.
+</br></br>
+7 (optional for those who want their pizza really authentic). Make a cross on top of the dough with a knife. An old Italian tradition, this is seen as a way of “blessing the bread.”
+</br></br>
+8. Preheat the oven to about 400°F, or about 200°C.
+</br></br>
+9. Dump the dough out of the bowl and back onto the floured surface. Punch it down, getting rid of any bubbles. (Note: Now’s the time to enlist a kid with more energy than they know what to do with!).
+</br></br>
+10. Divide the dough in half and let it rest for a few minutes.
+</br></br>
+11. Roll each section into a 12-inch disc. Now’s your chance to decide how thick you want your pizza to be! Do you want it pizza alta (Neapolitan-style) or pizza bassa (Roman-style)? Just remember, your crust will puff up a little bit as it’s baked!
+</br></br>
+12.  Transfer the dough onto an oiled pizza pan or baking sheet.
+</br></br>
+13. Add tomato sauce, if you want a pizza rossa (red pizza). Lots of pizzas in Italy are actually pizza bianca, without tomato sauce, so don’t feel like you have to! Brush the edges of the crust with a little bit of olive oil.
+</br></br>
+14. Bake each pizza for about 10 minutes, then add cheddar cheese (sliced or grated) on top, as well as any other ingredients.
+</br></br>
+15. Let the pizzas bake until the crust is browned and the cheese is melted. By lifting up the pizza to peek underneath, you can make sure the bottom has browned, too.
+</br></br>
+16. Remove your pizzas from the oven and, for a real Italian touch, garnish with a few basil leaves.
+</div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <div class="tab-pane" id="one">
+              <div class="row">
+                <div class="portlet portlet-default" style="width: 100%">
+                  <div id="chat">
+                    <div>
+                      <div class="portlet-body chat-widget" style="height: 500px;" id="chat-body">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>Classic Italian Pizza is the best no doubts.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Matt Richards
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>Totally agree.</p>
+                                <p>Best food ever invented.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Robin Dell
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>I wish it was healthier so I could eat it more</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			<input type="text" class='form-control col-md-10' placeholder='Enter message...' id='msg-field'></input>
+            <button type='button col-md-2' class='btn btn-default pull-right' id='send-btn'>Send</button>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <div class="variations"><a href="variant one.html"><img src="1st Variation P.png" alt="Girl in a jacket"></a></div>
+  <div class="variations"><a href="variant two.html"><img src="2nd Variation P.png" alt="Girl in a jacket"></a></div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function openInner(evt, cityName) {
+    var i, tabcontent, Innertablinks;
+    tabcontent = document.getElementsByClassName("innertabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("Innertablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+document.getElementById("pls").click();
+
+async function sendMessage(ev) {
+      var message = document.getElementById('msg-field').value;
+      const chat = document.getElementById('chat-body');
+      chat.innerHTML += `<hr><div class="row"><div class="col-lg-12"><div class="media">\
+                        <div class="media-body"><h6 class="media-heading">You<span class="small pull-right">12:28 PM</span>\
+                        </h6><p>${message}</p>\
+                        </div></div></div></div><hr>`
+      document.getElementById('msg-field').value = '';
+    }
+const send_btn = document.getElementById('send-btn');
+    send_btn.addEventListener('click', sendMessage);
+</script>
+</div>
+
+
+</div>
+<div id="bottomBar"></div>
+</body>
+</html>

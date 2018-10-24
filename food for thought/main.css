@@ -1,0 +1,698 @@
+body{
+	background-color: #333;
+	font-family: Arial;
+}
+
+#phoneScreen{
+	margin-left: 38.75%;
+	margin-top: 2%;
+	width: 22.5%;
+	height: 87.5%;
+	background-color: #F9F1ED;
+}
+
+#StartScreen{
+	margin-left: 38.75%;
+	margin-top: 2%;
+	width: 22.5%;
+	height: 87.5%;
+	background-color: white;
+	text-align: center;
+}
+
+#topBar {
+    width: 100%;
+	height: 4.5%;
+	overflow: hidden;
+	background-color: blue;
+	background-image: URL(topBar.png);
+	background-size: 100%;
+}
+#search{
+	width: 100%;
+	height: 8%;
+	background-color: #BBB;
+}
+
+#bottomBar {
+	margin-left: 38.27%;
+    width: 22.27%;
+	height: 7.5%;
+	overflow: hidden;
+	position: absolute;
+	bottom: 3%;
+	background-color: blue;
+	background-image: URL(navBar.png);
+	background-size: 100%;
+}
+
+
+
+.input{
+  width: 68%;
+  border: 3px solid #fff;
+  margin-top: 2%;
+  padding: 5px 30px;
+  border-radius: 50px;
+  outline: none;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+
+.close-btn{
+  position: absolute;
+  top: 27px;
+  right: 80px;
+  font-size: 35px;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.close-btn.active{
+  opacity: 1;
+  animation: animate 0.5s linear;
+}
+.searchBar{
+	float: left;
+}
+.icon {
+	width: 12.5%;
+	padding-left: 3.4%;
+	padding-top: 2.75%;
+	cursor: pointer;
+}
+.menu {
+	color: #777;
+	padding-left: 3%;
+	padding-top: 2%;
+}
+
+#mainMenu {
+	z-index: 1000;
+	background-color: #FBF8EF;
+	opacity: 1;
+	float: left;
+	position: absolute;
+	display: none;
+	width: 15%;
+	height: 74.5%;
+}
+
+#menuHeading{
+	width: 100%;
+	height: 13%;
+	background-color: #F4976C;
+	color: #943B19;
+	padding-top: 12%;
+	text-align: center;
+	font-size: 30px;
+}
+.vertical-menu, .vertical-settings {
+    width: 100%; /* Set a width if you like */
+}
+.vertical-settings{
+	margin-top: 41%;
+	border-top: solid;
+	border-top-color: #943B19;
+}
+.vertical-menu a {
+    background-color: #FBF8EF; /* Grey background color */
+    color: #943B19; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    color: #F0733A; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active { /* Add a green color to the "active/current" link */
+    color: #F0733A;
+}
+
+.vertical-settings a {
+   background-color: #FBF8EF; /* Grey background color */
+    color: #943B19;
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-settings a:hover {
+    color: #F0733A; /* Dark grey background on mouse-over */
+}
+
+.vertical-settings a.active { /* Add a green color to the "active/current" link */
+    color: #F0733A;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #FBF8EF;
+	
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+	width: 50%;
+    outline: none;
+    cursor: pointer;
+	color: #943B19;
+    padding: 14px 16px;
+    transition: 0.3s;
+	border-bottom: 1px solid #FBF8EF;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    border-bottom-color: #943B19;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+	height: 100%;
+	overflow-y: auto;
+	
+}
+.innertabcontent {
+	padding-top: 5%;
+    display: none;
+	font-size: 12px;
+	
+}
+.collapsible {
+	margin-top: 2%;
+  background-color: #F4976C;
+  color: #943B19;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.tabcontent .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.tabcontent img {
+	
+	width: 95%;
+}
+.tabcontent.active {
+	display: active;
+}
+
+.beefThing {
+	padding-left: 5%;
+	width: 95%;
+	height: 27%;
+}
+#changer {
+	width: 100%;
+	height: 80%;
+	overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+.foodScreen{
+	width: 100%;
+	height: 53%;
+}
+.foodScreen img{
+	width: 100%;
+}
+
+.tabs {
+    overflow: hidden;
+    background-color: #FBF8EF;
+	
+}
+.variationtabs {
+    overflow: hidden;
+    background-color: #FBF8EF;
+	
+}
+.variationtabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+	width: 50%;
+    outline: none;
+    cursor: pointer;
+	color: #943B19;
+    padding: 14px 16px;
+    transition: 0.3s;
+	border-bottom: 1px solid #FBF8EF;
+}
+
+.variationtabs button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.variationtabs button.active {
+    border-bottom-color: #943B19;
+}
+/* Style the buttons that are used to open the tab content */
+.tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+	width: 33.33%;
+    outline: none;
+    cursor: pointer;
+	color: #943B19;
+    padding: 14px 16px;
+    transition: 0.3s;
+	border-bottom: 1px solid #FBF8EF;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+    border-bottom-color: #943B19;
+}
+.Innertabs {
+    overflow: hidden;
+    background-color: #FBF8EF;
+	
+}
+
+/* Style the buttons that are used to open the tab content */
+.Innertabs button {
+    background-color: #F4976C;
+    float: left;
+    border: none;
+	width: 50%;
+    outline: none;
+    cursor: pointer;
+	color: #943B19;
+    padding: 7px 10px;
+    transition: 0.3s;
+	border-bottom: 1px solid #FBF8EF;
+}
+
+/* Change background color of buttons on hover */
+.Innertabs button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.Innertabs button.active {
+    border-bottom-color: #943B19;
+}
+.tab-pane{
+	overflow-y: scroll;
+	background-color: white;
+	height: 85%;
+}
+.portlet {
+    margin-bottom: 15px;
+}
+
+.btn-white {
+    border-color: #cccccc;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.portlet .portlet-heading {
+    padding: 0 15px;
+}
+
+.portlet .portlet-heading h4 {
+    padding: 1px 0;
+    font-size: 16px;
+}
+
+.portlet .portlet-heading a {
+    color: #fff;
+}
+
+.portlet .portlet-heading a:hover,
+.portlet .portlet-heading a:active,
+.portlet .portlet-heading a:focus {
+    outline: none;
+}
+
+.portlet .portlet-widgets .dropdown-menu a {
+    color: #333;
+}
+
+.portlet .portlet-widgets ul.dropdown-menu {
+    min-width: 0;
+}
+
+.portlet .portlet-heading .portlet-title {
+    float: left;
+}
+
+.portlet .portlet-heading .portlet-title h4 {
+    margin: 10px 0;
+}
+
+.portlet .portlet-heading .portlet-widgets {
+    float: right;
+    margin: 8px 0;
+}
+
+.portlet .portlet-heading .portlet-widgets .tabbed-portlets {
+    display: inline;
+}
+
+.portlet .portlet-heading .portlet-widgets .divider {
+    margin: 0 5px;
+}
+
+.portlet .portlet-body {
+    padding: 15px;
+    background: #fff;
+}
+
+.portlet .portlet-footer {
+    padding: 10px 15px;
+    background: #e0e7e8;
+}
+
+.portlet .portlet-footer ul {
+    margin: 0;
+}
+
+.portlet-green,
+.portlet-green>.portlet-heading {
+    border-color: #16a085;
+}
+
+.portlet-green>.portlet-heading {
+    color: #fff;
+    background-color: #16a085;
+}
+
+.portlet-orange,
+.portlet-orange>.portlet-heading {
+    border-color: #f39c12;
+}
+
+.portlet-orange>.portlet-heading {
+    color: #fff;
+    background-color: #f39c12;
+}
+
+.portlet-blue,
+.portlet-blue>.portlet-heading {
+    border-color: #2980b9;
+}
+
+.portlet-blue>.portlet-heading {
+    color: #fff;
+    background-color: #2980b9;
+}
+
+.portlet-red,
+.portlet-red>.portlet-heading {
+    border-color: #e74c3c;
+}
+
+.portlet-red>.portlet-heading {
+    color: #fff;
+    background-color: #e74c3c;
+}
+
+.portlet-purple,
+.portlet-purple>.portlet-heading {
+    border-color: #8e44ad;
+}
+
+.portlet-purple>.portlet-heading {
+    color: #fff;
+    background-color: #8e44ad;
+}
+
+
+
+.portlet-default>.portlet-heading,
+.portlet-dark-blue>.portlet-heading {
+    color: #fff;
+    background-color: #34495e;
+}
+
+.portlet-basic,
+.portlet-basic>.portlet-heading {
+    border-color: #333;
+}
+
+.portlet-basic>.portlet-heading {
+    border-bottom: 1px solid #333;
+    color: #333;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    .portlet {
+        margin-bottom: 30px;
+    }
+}
+
+p{
+	font-family: Arial;
+}
+.tabcontent #send-btn{
+	 background-color: #F4976C;
+    border: none;
+	width: 20%;
+	padding: 12.5px 5px;
+    outline: none;
+    cursor: pointer;
+	color: #943B19;
+}
+.tabcontent input[type=text]{
+    width: 80%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.variations {
+	width: 100%;
+	margin-top: 3%;
+	height: 35%;
+}
+#profile {
+	margin-top: 5%;
+	width: 40%;
+	margin-left: 30%;
+	background-color: white;
+}
+.accountScreen h2{
+	text-align: center;
+}
+#profile img {
+	width: 100%;
+}
+#info {
+
+	padding-top: 5px;
+	margin: 10px;
+	border: solid 2px black;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	background-color: #F4976C;
+	color: #943B19;
+
+}
+.heading {
+	
+	font-size: 14px;
+	margin-left: 2.5%;
+	font-style: italic;
+}
+
+.accountScreen input[type=text], input[type=password]{
+    width: 95%;
+	margin-left: 2.5%;
+    padding: 12px 20px;
+    display: inline-block;
+	color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#enterRecipe {
+
+
+	padding-top: 5px;
+	margin: 10px;
+	border: solid 2px black;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	background-color: #F4976C;
+	color: #943B19;
+}
+
+textarea {
+    width: 95%;
+    height: 21.25%;
+	margin-left: 2.5%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+}
+
+.recipeScreen {
+	height: 87%;
+	overflow-y: auto;
+}
+
+.recipeScreen input[type=text], input[type=password]{
+    width: 95%;
+	margin-left: 2.5%;
+    padding: 12px 20px;
+    display: inline-block;
+	color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#submit {
+    width: 95%;
+	margin-left: 2.5%;
+	margin-top: 5%;
+    background-color: #943B19;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#popup {
+	z-index: 1000;
+	background-color: white;
+	opacity: 1;
+	float: left;
+	position: absolute;
+	display: none;
+	margin-left: 3.5%;
+	margin-top: 9%;
+	width: 15%;
+	text-align: center;
+	height: 20%;
+	border-radius: 4px;
+	border: solid 4px black;
+}
+
+.disabled{
+  pointer-events: none;
+}
+#popup p{
+	height: 45.5%;
+}
+#homeBtn, #close {
+	width: 50%;
+	float: left;
+	height: 30%;
+	background-color: #BBB;
+	border: none;
+	display: block;
+	cursor: pointer;
+}
+
+#front{
+	width: 95%;
+
+}
+
+#buttonContainer{
+	width: 100%;
+
+}
+
+.startWords {
+	Font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding:0;
+	Font-family: Arial;
+}
+.EndWords {
+	Font-size: 30px;
+	font-weight: bold;
+	margin-top: 0;
+	padding:5px;
+	Font-family: Arial;
+	background-color: #FF7700;
+}
+#enter {
+	width: 50%;
+	margin-left: 25%;
+	padding: 12px 15px;
+	background-color:  #3c776e;
+	border: none;
+	font-size: 16px;
+	display: block;
+	border-radius: 30px;
+	color: white;
+	cursor: pointer;
+}

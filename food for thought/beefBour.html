@@ -1,0 +1,221 @@
+
+<html>
+<head>
+<link href="main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script>
+$(".input").focus(function() {
+  $(".close-btn").addClass("active");
+});
+
+$(".input").focusout(function() {
+  $(".close-btn").removeClass("active");
+  $(this).val("");
+});
+
+function myFunction() {
+    var x = document.getElementById("mainMenu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		
+    } else {
+        x.style.display = "none";
+		
+    }
+}
+</script>
+</head>
+<body>
+<div id="phoneScreen">
+<div id="topBar"></div>
+<div id="search">
+	<div class="searchBar icon" onclick="myFunction()"><i class="fa fa-bars menu" style="font-size:24px"></i></div>
+    <input type="text" class="input searchBar" placeholder="Search...">
+    <div class="close-btn">&times;</div>
+	<div class="searchBar icon" onclick="window.location.href='index.html'"><i class="fa fa-home menu" style="font-size:27px"></i></div>
+  </div>
+  <div id = "mainMenu">
+  <div id="menuHeading">Main Menu</div>
+  <div class="vertical-menu">
+  <a href="index.html">Home</a>
+  <a href="My Account.html">My Account</a>
+  <a href="#">My Family</a>
+  <a href="submit recipe.html">Submit Recipe</a>
+</div>
+<div class="vertical-settings">
+
+</div>
+
+</div>
+<div class="foodScreen">
+<img src="beefBour.png">
+<div class="tabs">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Origin</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Comments</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Variations</button>
+</div>
+
+<div id="London" class="tabcontent">
+<button class="collapsible" id="pls">Story</button>
+<div id="Story" class="innertabcontent">
+Beef bourguignon also called beef Burgundy is a beef stew braised in red wine, often red Burgundy, and beef broth, generally flavoured with carrots, onions, garlic, and a bouquet garni, and garnished with pearl onions, mushrooms, and bacon. It is also a dish consisting of a piece of braised beef with the same garnish, when it may be called pièce de bœuf à la bourguignonne.
+It is a well-known French recipe. The name probably refers to the use of wine, and it is likely not a regional recipe from Burgundy. </br></br>
+
+The dish is often considered "traditional" but in fact is first documented in the 19th century. Other recipes called "à la Bourguignonne" with similar garnishes are found in the mid-19th century for leg of lamb and for rabbit.
+The dish has become a standard of French cuisine, notably in Parisian bistrots. It only began to be considered as a Burgundian specialty in the twentieth century.
+</div>
+<button class="collapsible">Recipe</button>
+<div id="Recipe" class="innertabcontent">
+What you need to make Beef Bourguignon</br>
+(makes 8 Servings):</br></br>
+
+2 1/2 tablespoons olive oil</br>
+1.5kg beef chuck steak, trimmed, cut into 5cm pieces</br>
+1 large brown onion, finely chopped</br>
+200g shortcut rindless bacon, halved lengthways, cut into 1cm strips</br>
+2 garlic cloves, finely chopped</br>
+1 cup red wine</br>
+1 tablespoon tomato paste</br>
+400g small button mushrooms</br>
+Green beans, to serve</br>
+Mashed potato, to serve</br>
+</br>
+How to make your Beef Bourguignon:</br>
+
+1. Heat 2 tablespoons oil in a large, heavy-based casserole dish over medium-high heat. Cook beef, in batches, for 5 to 6 minutes or until browned. Transfer to a bowl.
+</br></br>
+2. Reduce heat to medium. Heat remaining oil in dish. Add brown onion and bacon. Cook, stirring, for 6 minutes or until onion has softened. Add garlic. Cook for 1 minute.
+</br></br>
+3. Return beef and juices to pan. Add wine. Bring to the boil. Add stock and tomato paste. Bring to the boil. Reduce heat to low. Simmer, covered, for 1 hour and 15 minutes. Add pickling onions and mushrooms. Cook, covered, for 30 minutes or until meat and onions are tender. Season with salt and pepper. Serve.
+</br></br>
+
+</div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <div class="tab-pane active" id="one">
+              <div class="row">
+                <div class="portlet portlet-default" style="width: 100%">
+                  <div id="chat">
+                    <div>
+                      <div class="portlet-body chat-widget" style="height: 500px;" id="chat-body">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>This is delicious and I learnt something! Double Win!</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Sam Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>Looks interesting!</p>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Sours
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>Not a fan but I found the story interesting.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			<input type="text" class='form-control col-md-10' placeholder='Enter message...' id='msg-field'></input>
+            <button type='button col-md-2' class='btn btn-default pull-right' id='send-btn'>Send</button>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function openInner(evt, cityName) {
+    var i, tabcontent, Innertablinks;
+    tabcontent = document.getElementsByClassName("innertabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("Innertablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+document.getElementById("pls").click();
+
+async function sendMessage(ev) {
+      var message = document.getElementById('msg-field').value;
+      const chat = document.getElementById('chat-body');
+      chat.innerHTML += `<hr><div class="row"><div class="col-lg-12"><div class="media">\
+                        <div class="media-body"><h6 class="media-heading">You<span class="small pull-right">12:28 PM</span>\
+                        </h6><p>${message}</p>\
+                        </div></div></div></div><hr>`
+      document.getElementById('msg-field').value = '';
+    }
+const send_btn = document.getElementById('send-btn');
+    send_btn.addEventListener('click', sendMessage);
+</script>
+</div>
+
+
+</div>
+<div id="bottomBar"></div>
+</body>
+</html>
