@@ -32,6 +32,9 @@ https://github.com/deco3500-2018/food-gurus/wiki/Proposal
 1. [Testing Plan for Prototype Two](https://github.com/deco3500-2018/food-gurus/wiki/Testing-Plan-for-Prototype-Two)
 2. [Results of the Second Testing](https://github.com/deco3500-2018/food-gurus/wiki/Results-of-the-Second-Testing)
 
+## User Scenarios
+1. [User Scenarios](https://github.com/deco3500-2018/food-gurus/wiki/Possible-User-Scenarios)
+
 # UPDATE 2-10-18
 
 Link to the Team Drive: https://drive.google.com/drive/folders/1C-q0496Tpqrg-y61dVUJRgZ3BdcZEvgu?usp=sharing
