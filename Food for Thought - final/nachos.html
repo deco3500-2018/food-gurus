@@ -1,0 +1,224 @@
+
+<html>
+<head>
+<link href="main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script>
+$(".input").focus(function() {
+  $(".close-btn").addClass("active");
+});
+
+$(".input").focusout(function() {
+  $(".close-btn").removeClass("active");
+  $(this).val("");
+});
+
+function myFunction() {
+    var x = document.getElementById("mainMenu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		
+    } else {
+        x.style.display = "none";
+		
+    }
+}
+</script>
+</head>
+<body>
+<div id="phoneScreen">
+<div id="topBar"></div>
+<div id="search">
+	<div class="searchBar icon" onclick="myFunction()"><i class="fa fa-bars menu" style="font-size:24px"></i></div>
+    <input type="text" class="input searchBar" placeholder="Search...">
+    <div class="close-btn">&times;</div>
+	<div class="searchBar icon" onclick="window.location.href='index.html'"><i class="fa fa-home menu" style="font-size:27px"></i></div>
+  </div>
+  <div id = "mainMenu">
+  <div id="menuHeading">Main Menu</div>
+  <div class="vertical-menu">
+  <a href="index.html">Home</a>
+  <a href="My Account.html">My Account</a>
+  
+  <a href="submit recipe.html">Submit Recipe</a>
+</div>
+<div class="vertical-settings">
+
+</div>
+
+</div>
+<div class="foodScreen">
+<img src="nachos.PNG">
+<div class="tabs">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Origin</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Comments</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Variations</button>
+</div>
+
+<div id="London" class="tabcontent">
+<button class="collapsible" id="pls">Story</button>
+<div id="Story" class="innertabcontent">
+Nachos originated in the city of Piedras Negras, Coahuila, Mexico, just over the border from Eagle Pass, Texas. In 1943, the wives of U.S. soldiers stationed at Fort Duncan in nearby Eagle Pass were in Piedras Negras on a shopping trip, and arrived at the restaurant after it had already closed for the day. The maître d'hôtel, Ignacio "Nacho" Anaya, created a new snack for them with what little he had available in the kitchen: tortillas and cheese. Anaya cut the tortillas into triangles, fried them, added shredded cheddar cheese, quickly heated them, added sliced pickled jalapeño peppers,and served them.
+When asked what the dish was called, he answered, "Nacho's especiales". As word of the dish traveled, the apostrophe was lost, and Nacho's "specials" became "special nachos".
+</div>
+<button class="collapsible">Recipe</button>
+<div id="Recipe" class="innertabcontent">
+What you need to make Nachos</br>
+(makes 1 Servings):</br></br>
+
+1 tablespoon olive oil </br>
+1 large onion, finely chopped </br>
+500g beef mince </br>
+300g can kidney beans, drained, rinsed </br>
+1 teaspoon Mexican chilli powder </br>
+35g sachet reduced-salt taco seasoning mix </br>
+2 tablespoons tomato paste </br>
+1/4 cup water </br>
+1/2 cup coriander leaves, chopped </br>
+230g packet corn chips </br>
+1 cup grated cheddar cheese </br>
+1/2 cup tomato salsa </br>
+Avocado, diced, to serve </br>
+Sour cream, to serve </br>
+Fresh coriander, to serve </br>
+</br>
+How to make your Hot dog:</br>
+
+1. Preheat oven to 200C. Heat oil in a non-stick frying pan over medium heat. Cook onion for 2 minutes, or until soft. Add mince. Cook, stirring with a wooden spoon, for 5 minutes or until browned.
+</br></br>
+2. Add kidney beans, chilli powder, seasoning, tomato paste and water. Reduce heat to medium-low. Simmer for 5 minutes, or until thick. Stir through coriander.
+</br></br>
+3. Arrange corn chips on a heatproof plate. Top with mince. Sprinkle with cheese. Bake for 15 minutes, or until hot. Top with salsa, avocado and sour cream. Serve.
+</br></br>
+
+</div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <div class="tab-pane active" id="one">
+              <div class="row">
+                <div class="portlet portlet-default" style="width: 100%">
+                  <div id="chat">
+                    <div>
+                      <div class="portlet-body chat-widget" style="height: 500px;" id="chat-body">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>This is delicious and I learnt something! Double Win!</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Sam Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>Love nachos! Didn't realise they had such a history.</p>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Sours
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>Not a fan but I found the story interesting.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			<input type="text" class='form-control col-md-10' placeholder='Enter message...' id='msg-field'></input>
+            <button type='button col-md-2' class='btn btn-default pull-right' id='send-btn'>Send</button>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <div class="variations"><a href="ItalianPizza.html"><img src="1st Variation P.PNG" alt="Girl in a jacket"></a></div>
+  <div class="variations"><a href="ItalianPizza.html"><img src="2nd Variation P.PNG" alt="Girl in a jacket"></a></div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function openInner(evt, cityName) {
+    var i, tabcontent, Innertablinks;
+    tabcontent = document.getElementsByClassName("innertabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("Innertablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+document.getElementById("pls").click();
+
+async function sendMessage(ev) {
+      var message = document.getElementById('msg-field').value;
+      const chat = document.getElementById('chat-body');
+      chat.innerHTML += `<hr><div class="row"><div class="col-lg-12"><div class="media">\
+                        <div class="media-body"><h6 class="media-heading">You<span class="small pull-right">12:28 PM</span>\
+                        </h6><p>${message}</p>\
+                        </div></div></div></div><hr>`
+      document.getElementById('msg-field').value = '';
+    }
+const send_btn = document.getElementById('send-btn');
+    send_btn.addEventListener('click', sendMessage);
+</script>
+</div>
+
+
+</div>
+<div id="bottomBar"></div>
+</body>
+</html>

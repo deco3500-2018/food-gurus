@@ -1,0 +1,227 @@
+
+<html>
+<head>
+<link href="main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script>
+$(".input").focus(function() {
+  $(".close-btn").addClass("active");
+});
+
+$(".input").focusout(function() {
+  $(".close-btn").removeClass("active");
+  $(this).val("");
+});
+
+function myFunction() {
+    var x = document.getElementById("mainMenu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		
+    } else {
+        x.style.display = "none";
+		
+    }
+}
+</script>
+</head>
+<body>
+<div id="phoneScreen">
+<div id="topBar"></div>
+<div id="search">
+	<div class="searchBar icon" onclick="myFunction()"><i class="fa fa-bars menu" style="font-size:24px"></i></div>
+    <input type="text" class="input searchBar" placeholder="Search...">
+    <div class="close-btn">&times;</div>
+	<div class="searchBar icon" onclick="window.location.href='index.html'"><i class="fa fa-home menu" style="font-size:27px"></i></div>
+  </div>
+  <div id = "mainMenu">
+  <div id="menuHeading">Main Menu</div>
+  <div class="vertical-menu">
+  <a href="index.html">Home</a>
+  <a href="My Account.html">My Account</a>
+  
+  <a href="submit recipe.html">Submit Recipe</a>
+</div>
+<div class="vertical-settings">
+
+</div>
+
+</div>
+<div class="foodScreen">
+<img src="1st variation P.PNG">
+<div class="tabs">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Origin</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Comments</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Variations</button>
+</div>
+
+<div id="London" class="tabcontent">
+<button class="collapsible" id="pls">Story</button>
+<div id="Story" class="innertabcontent">
+	Everyone tells me how good pizza but as I am a vegan i decided to make an alternative so that i too could try it.
+</div>
+<button class="collapsible">Recipe</button>
+<div id="Recipe" class="innertabcontent">
+PIZZA</br>
+1/2 of one Trader Joe’s garlic-herb pizza crust (or half of this homemade recipe or this gluten-free recipe)</br>
+1/2 cup each red, green, and orange bell pepper (loosely chopped)</br>
+1/3 cup red onion (chopped)</br>
+1 cup button mushrooms (chopped)</br>
+1/2 tsp each dried or fresh basil, oregano, and garlic powder</br>
+1/4 tsp sea salt</br></br>
+SAUCE</br>
+1 15-ounce can tomato sauce* (organic when possible)</br>
+1/2 tsp each dried or fresh basil, oregano, garlic powder, granulated sugar</br>
+~1/4 tsp sea salt (to taste)</br></br>
+TOPPINGS</br>
+1/2 cup vegan parmesan cheese</br>
+Red pepper flake + dried oregano</br></br>
+Instructions</br>
+Preheat oven to 425 degrees F (218 C) and position a rack in the middle of the oven.</br>
+Bring large skillet to medium heat.
+</br> Once hot, add 1 Tbsp olive oil (amount as original recipe is written // adjust if altering batch size), onion and peppers. Season with salt, herbs and stir. 
+</br>Cook until soft and slightly charred – 10-15 minutes, adding the mushrooms in the last few minutes. Set aside.</br>
+</br>
+Prepare sauce by adding tomato sauce to a mixing bowl and adding seasonings and salt to taste. Adjust seasonings as needed. Set aside. Note: If using tomato paste, add water to thin until desired consistency is reached.
+Prepare vegan parmesan if you haven’t already by blitzing raw cashews, sea salt, nutritional yeast and garlic powder in a food processor until a fine meal is reached. Transfer to jar and refrigerate to keep fresh.
+</br>
+Roll out dough onto a floured surface and transfer to a parchment-lined round baking sheet. You’re going to add the pizza WITH the parchment directly to the oven to properly crisp the crust, so any round object will do as it’s not actually going into the oven (I use a wood board).
+Top with desired amount of tomato sauce (you’ll have leftovers, which you can store in a jar for later use), a sprinkle of parmesan cheese and the sautéed veggies.
+Use the baking sheet to gently slide the pizza directly onto the oven rack WITH the parchment underneath. Otherwise it will fall through.
+</br>
+Bake for 17-20 minutes or until crisp and golden brown.
+</br>
+Serve with remaining parmesan cheese, dried oregano and red pepper flake. Leftovers keep well – no need to reheat! Cold pizza is yum.
+
+</div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <div class="tab-pane" id="one">
+              <div class="row">
+                <div class="portlet portlet-default" style="width: 100%">
+                  <div id="chat">
+                    <div>
+                      <div class="portlet-body chat-widget" style="height: 500px;" id="chat-body">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>Hi, I wanted to make sure you got the latest product report. Did Roddy get it to you?</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>Yeah I did. Everything looks good.</p>
+                                <p>Did you have an update on purchase order #302?</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>No not yet, the transaction hasn't cleared yet. I will let you know as soon as everything
+                                  goes through. Any idea where you want to get lunch today?</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			<input type="text" class='form-control col-md-10' placeholder='Enter message...' id='msg-field'></input>
+            <button type='button col-md-2' class='btn btn-default pull-right' id='send-btn'>Send</button>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <div class="variations"><a href="ItalianPizza.html"><img src="1st Variation P.PNG" alt="Girl in a jacket"></a></div>
+  <div class="variations"><a href="ItalianPizza.html"><img src="2nd Variation P.PNG" alt="Girl in a jacket"></a></div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function openInner(evt, cityName) {
+    var i, tabcontent, Innertablinks;
+    tabcontent = document.getElementsByClassName("innertabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("Innertablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+document.getElementById("pls").click();
+
+async function sendMessage(ev) {
+      var message = document.getElementById('msg-field').value;
+      const chat = document.getElementById('chat-body');
+      chat.innerHTML += `<hr><div class="row"><div class="col-lg-12"><div class="media">\
+                        <div class="media-body"><h6 class="media-heading">You<span class="small pull-right">12:28 PM</span>\
+                        </h6><p>${message}</p>\
+                        </div></div></div></div><hr>`
+      document.getElementById('msg-field').value = '';
+    }
+const send_btn = document.getElementById('send-btn');
+    send_btn.addEventListener('click', sendMessage);
+</script>
+</div>
+
+
+</div>
+<div id="bottomBar"></div>
+</body>
+</html>

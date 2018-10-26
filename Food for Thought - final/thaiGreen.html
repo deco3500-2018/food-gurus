@@ -1,0 +1,224 @@
+
+<html>
+<head>
+<link href="main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script>
+$(".input").focus(function() {
+  $(".close-btn").addClass("active");
+});
+
+$(".input").focusout(function() {
+  $(".close-btn").removeClass("active");
+  $(this).val("");
+});
+
+function myFunction() {
+    var x = document.getElementById("mainMenu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		
+    } else {
+        x.style.display = "none";
+		
+    }
+}
+</script>
+</head>
+<body>
+<div id="phoneScreen">
+<div id="topBar"></div>
+<div id="search">
+	<div class="searchBar icon" onclick="myFunction()"><i class="fa fa-bars menu" style="font-size:24px"></i></div>
+    <input type="text" class="input searchBar" placeholder="Search...">
+    <div class="close-btn">&times;</div>
+<div class="searchBar icon" onclick="window.location.href='index.html'"><i class="fa fa-home menu" style="font-size:27px"></i></div>
+  </div>
+  <div id = "mainMenu">
+  <div id="menuHeading">Main Menu</div>
+  <div class="vertical-menu">
+  <a href="index.html">Home</a>
+  <a href="My Account.html">My Account</a>
+  
+  <a href="submit recipe.html">Submit Recipe</a>
+</div>
+<div class="vertical-settings">
+
+</div>
+
+</div>
+<div class="foodScreen">
+<img src="thaiGreen.PNG">
+<div class="tabs">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Origin</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Comments</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Variations</button>
+</div>
+
+<div id="London" class="tabcontent">
+<button class="collapsible" id="pls">Story</button>
+<div id="Story" class="innertabcontent">
+Thai Green Curry is a traditional recipe originating in Thailand. While the individual ingredients have their own seperate history, the combination of these into the Thai Green Curry was something truly unique.
+</br></br>
+</div>
+<button class="collapsible">Recipe</button>
+<div id="Recipe" class="innertabcontent">
+What you need to make an Thai Green Curry</br>
+(makes 4 servings):</br></br>
+
+1 1/2 cups (300g) SunRice Long Grain Jasmine Rice</br>
+2 tablespoons Alfa One Rice Bran Oil</br>
+1 brown onion, cut into thin wedges</br>
+1/2 x 210g jar Valcom Authentic Thai Green Curry Paste</br>
+400ml coconut milk</br>
+300ml chicken stock</br>
+450g Coles RSPCA Approved Chicken Breast Fillets, cut into 1cm-thick strips</br>
+1 green capsicum, seeded, thinly sliced</br>
+100g snow peas, trimmed (optional)</br>
+1/2 bunch coriander, leaves picked</br>
+1 tablespoon fish sauce</br>
+1 tablespoon brown sugar</br>
+1 cup (65g) bean sprouts (optional)</br>
+2 limes, cut into wedges</br>
+
+</br></br>
+How to make your Thai Green Curry:</br>
+1. Cook the rice following the packet directions.
+</br></br>
+2. Meanwhile, heat the oil in a large frying pan over medium-high heat. Add the onion and cook, stirring, for 2 mins or until onion softens. Add the curry paste. Cook, stirring, for 2 mins or until fragrant.
+</br></br>
+3. Add the coconut milk and stock. Bring to a simmer. Add the chicken, capsicum and snow peas, if desired, and cook for 2-3 mins or until chicken is cooked through. Chop half the coriander leaves and add to the curry. Stir in the fish sauce, sugar and half the bean sprouts, if desired. Squeeze over half the lime wedges. Taste and add more fish sauce, sugar and lime juice, if desired.
+</br></br>
+4. Top the curry with remaining bean sprouts, and coriander leaves. Serve with the rice and lime wedges.
+</br></br>
+</div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <div class="tab-pane active" id="one">
+              <div class="row">
+                <div class="portlet portlet-default" style="width: 100%">
+                  <div id="chat">
+                    <div>
+                      <div class="portlet-body chat-widget" style="height: 500px;" id="chat-body">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>Hi, I just wanted to say I love Thai Green Curry./p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>This is fascinating to read!.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="media">
+                              <div class="media-body">
+                                <h6 class="media-heading">Jane Smith
+                                  <span class="small pull-right">12:23 PM</span>
+                                </h6>
+                                <p>No way didn't expect to find Thai Green Curry here!</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			<input type="text" class='form-control col-md-10' placeholder='Enter message...' id='msg-field'></input>
+            <button type='button col-md-2' class='btn btn-default pull-right' id='send-btn'>Send</button>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <div class="variations"><a href="ItalianPizza.html"><img src="1st Variation P.PNG" alt="Girl in a jacket"></a></div>
+  <div class="variations"><a href="ItalianPizza.html"><img src="2nd Variation P.PNG" alt="Girl in a jacket"></a></div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function openInner(evt, cityName) {
+    var i, tabcontent, Innertablinks;
+    tabcontent = document.getElementsByClassName("innertabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("Innertablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+document.getElementById("pls").click();
+
+async function sendMessage(ev) {
+      var message = document.getElementById('msg-field').value;
+      const chat = document.getElementById('chat-body');
+      chat.innerHTML += `<hr><div class="row"><div class="col-lg-12"><div class="media">\
+                        <div class="media-body"><h6 class="media-heading">You<span class="small pull-right">12:28 PM</span>\
+                        </h6><p>${message}</p>\
+                        </div></div></div></div><hr>`
+      document.getElementById('msg-field').value = '';
+    }
+const send_btn = document.getElementById('send-btn');
+    send_btn.addEventListener('click', sendMessage);
+</script>
+</div>
+
+
+</div>
+<div id="bottomBar"></div>
+</body>
+</html>

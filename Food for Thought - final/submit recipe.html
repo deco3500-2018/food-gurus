@@ -1,0 +1,93 @@
+
+<html>
+<head>
+<link href="main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script>
+$(".input").focus(function() {
+  $(".close-btn").addClass("active");
+});
+
+$(".input").focusout(function() {
+  $(".close-btn").removeClass("active");
+  $(this).val("");
+});
+
+function myFunction() {
+    var x = document.getElementById("mainMenu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		
+    } else {
+        x.style.display = "none";
+		
+    }
+}
+</script>
+</head>
+<body>
+<div id="phoneScreen">
+<div id="topBar"></div>
+<div id="search">
+	<div class="searchBar icon" onclick="myFunction()"><i class="fa fa-bars menu" style="font-size:24px"></i></div>
+    <input type="text" class="input searchBar" placeholder="Search...">
+    <div class="close-btn">&times;</div>
+	<div class="searchBar icon" onclick="window.location.href='index.html'"><i class="fa fa-home menu" style="font-size:27px"></i></div>
+  </div>
+  <div id = "mainMenu">
+  <div id="menuHeading">Main Menu</div>
+  <div class="vertical-menu">
+  <a href="index.html">Home</a>
+  <a href="My Account.html">My Account</a>
+  
+  <a href="submit recipe.html">Submit Recipe</a>
+</div>
+<div class="vertical-settings">
+
+</div>
+
+</div>
+<div id="popup">
+<p id="popuptext">Your recipe has been submitted and is pending. Thank you for your submission.</p>
+<button id="homeBtn" onclick="window.location.href='index.html'">Home</button><button id="close" onclick = "Submit()">Close</button>
+</div>
+<div class="RecipeScreen">
+<div id="enterRecipe">
+    <p class="heading">Recipe Name:</p>
+    <input type="text" id="fname" placeholder="Enter Name here..">
+    <p class="heading">Recipe Description:</p>
+    <textarea id="description" placeholder="Enter description.."></textarea>
+    <p class="heading">Ingredients:</p>  
+	<textarea id="Ingredients" placeholder="Enter Ingredients.."></textarea>
+	<p class="heading">Recipe Steps:</p>  
+	<textarea id="recipe" placeholder="Enter Recipe Steps.."></textarea>
+	
+	<button id="submit" value="Submit" onclick="Submit()">Submit</button>
+</div>
+
+<script>
+function Submit(){
+ if(document.getElementById("fname").value != '' && document.getElementById("description").value != '' && document.getElementById("recipe").value != '' && && document.getElementById("Ingredients").value != ''){
+	var x = document.getElementById("popup");
+	var y = document.getElementById("submit");
+	if (x.style.display === "none") {
+        x.style.display = "block";
+		y.style.display = "none";
+		
+		
+    } else {
+        x.style.display = "none";
+		y.style.display = "block";
+		
+    }
+	
+ }
+ 
+}
+</script>
+</div>
+</div>
+<div id="bottomBar"></div>
+</body>
+</html>
