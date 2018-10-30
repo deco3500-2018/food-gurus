@@ -15,6 +15,11 @@ https://github.com/deco3500-2018/food-gurus/wiki/Proposal
 
 1. [Interviews and Results](https://github.com/deco3500-2018/food-gurus/wiki/Interview-&-Results)
 2. [Additional Background Research](https://github.com/deco3500-2018/food-gurus/wiki/Additional-Background-Research---Literature-Review)
+3. [Possible User Scenarios](https://github.com/deco3500-2018/food-gurus/wiki/Possible-User-Scenarios)
+4. [Problem Space](https://github.com/deco3500-2018/food-gurus/wiki/Problem-Space)
+
+## Proposal
+1. [Project Proposal](https://github.com/deco3500-2018/food-gurus/wiki/Proposal)
 
 ## Meetings and Stand-Ups
 
@@ -32,8 +37,19 @@ https://github.com/deco3500-2018/food-gurus/wiki/Proposal
 1. [Testing Plan for Prototype Two](https://github.com/deco3500-2018/food-gurus/wiki/Testing-Plan-for-Prototype-Two)
 2. [Results of the Second Testing](https://github.com/deco3500-2018/food-gurus/wiki/Results-of-the-Second-Testing)
 
-## User Scenarios
-1. [User Scenarios](https://github.com/deco3500-2018/food-gurus/wiki/Possible-User-Scenarios)
+## Prototyping Summary
+1. [Summary of Prototype Results](https://github.com/deco3500-2018/food-gurus/wiki/Summary-of-Prototype-Results)
+
+## Showcase and High Fidelity Prototype
+1. [Preparation for the Showcase](https://github.com/deco3500-2018/food-gurus/wiki/Preparation-for-the-Showcase)
+2. [Colour Scheme](https://github.com/deco3500-2018/food-gurus/wiki/Colour-Scheme)
+3. [Food For Thought Documentation](https://github.com/deco3500-2018/food-gurus/wiki/Food-For-Thought-Documentation)
+4. [How to Use the Application](https://github.com/deco3500-2018/food-gurus/wiki/How-to-Use)
+5. [Future Additions](https://github.com/deco3500-2018/food-gurus/wiki/Future-Additions)
+
+## Documentation
+1. [Food For Thought Documentation](https://github.com/deco3500-2018/food-gurus/wiki/Food-For-Thought-Documentation)
+2. [Summary of Prototype Results](https://github.com/deco3500-2018/food-gurus/wiki/Summary-of-Prototype-Results)
 
 # UPDATE 2-10-18
 
